@@ -28,3 +28,10 @@ The initial approach was to use the [train data](https://www.kaggle.com/competit
 
 ## Method
 
+## Credits
+
+This repository is based on a heavily modified fork of [pytorch-template](https://github.com/victoresque/pytorch-template) and [asr_project_template](https://github.com/WrathOfGrapes/asr_project_template) repositories.
+
+## License
+
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
