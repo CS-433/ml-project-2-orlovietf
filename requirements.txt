@@ -6,3 +6,6 @@ torch
 scipy
 scikit-learn
 seaborn
+statistics
+collections
+operator
