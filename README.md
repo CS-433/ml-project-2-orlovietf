@@ -28,7 +28,7 @@ The initial approach was to use the [train data](https://www.kaggle.com/competit
 
 One part of the experiments was conducted by directly using sequences as inputs to our methods and values of tm as outputs. However, based on this [discussion](https://www.kaggle.com/competitions/novozymes-enzyme-stability-prediction/discussion/358320), we incorporated the knowledge based data preprocessing to obtain [TO-DO].
 
-## Installation [TO-DO]
+## Installation
 
 Installation may depend on your task. The general steps are the following:
 
@@ -63,25 +63,12 @@ Installation may depend on your task. The general steps are the following:
    pip install -r requirements.txt
    ```
 
-2. Install `pre-commit`:
-   ```bash
-   pre-commit install
-   ```
+## How To Use
 
-## How To Use [TO-DO]
-
-To train a model, run the following command:
+To train an esm model, run the following command:
 
 ```bash
-python3 train.py -cn=CONFIG_NAME HYDRA_CONFIG_ARGUMENTS
-```
-
-Where `CONFIG_NAME` is a config from `src/configs` and `HYDRA_CONFIG_ARGUMENTS` are optional arguments.
-
-To run inference (evaluate the model or save predictions):
-
-```bash
-python3 inference.py HYDRA_CONFIG_ARGUMENTS
+python3 scripts/run.py
 ```
 
 ## Method
