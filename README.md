@@ -63,14 +63,6 @@ Installation may depend on your task. The general steps are the following:
    pip install -r requirements.txt
    ```
 
-## How To Use
-
-To train an esm model, run the following command:
-
-```bash
-python3 scripts/run.py
-```
-
 ## Method
 
 We implemented two main approaches for this problem.
@@ -80,6 +72,50 @@ We implemented two main approaches for this problem.
 - Carbonara Architecture: Used the [Carbonara architecture](https://github.com/LBM-EPFL/CARBonAra/tree/main) embeddings from our data (precisely, the output from the penultimate layer) and:
     1. Obtained features used to train a neural network.
     2. Used RNN model on embeddings directly.
+
+## How To Use
+
+To train an esm model, run the following command:
+
+```bash
+python3 scripts/run.py
+```
+
+## Code Structure
+
+```
+├── metricks and plots:  Folder containing metrics and plots of our models
+├── models
+    ├── carbonara_embeddings.ipynb: notebok to process carbonara features and extract embeddings
+    ├── carbonara_rnn.ipynb: rnn model based on carbonara embeddings
+    ├── carbonara_simple.ipyng: MLP model based on carbonara embeddings
+    ├── data_exploration.ipynb: notebook for data explotation
+    ├── esm.ipynb: model based on the ESM output
+    ├── evaluate_models.ipynb: computes the relevant metrics and plots the results
+├── predictions: Folder containing model predictions on the validation dataset
+├── scripts
+    ├── datasets.py: definition ProteinDataset used by the ESM model
+    ├── esm.py: defitinion of the esm model we used
+    ├── evaluate.py: code to evaluete the performance of the esm model
+    ├── run.py: python script to run and evaluate the esm model
+    ├── train.py: code for training the esm model
+├── CS_433_Project_1.pdf: a report of the project.
+├── README.md
+├── requirements.txt
+├── test.cvs: csv file containg test data
+├── train.csv: csv file containing training data
+```
+
+## Results
+
+
+The table below shows the results obtained for Model 1 (ESM) and the best Model 2 (Carbonara MLP with pLDDT factor). 
+
+| **Model**    | **PCC**        | **SCC**        | **RMSE**       | **MAE**       |
+|--------------|----------------|----------------|----------------|---------------|
+| **ESM**      | 0.77 ± 0.01    | 0.56 ± 0.01    | 7.7 ± 0.1      | 5.6 ± 0.1     |
+| Carbonara    | 0.49 ± 0.01    | 0.37 ± 0.01    | 11.6 ± 0.2     | 8.7 ± 0.3     |
+
 
 ## Credits
 
