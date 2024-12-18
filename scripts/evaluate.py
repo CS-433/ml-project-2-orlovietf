@@ -5,11 +5,15 @@ import torch
 import numpy as np
 
 # Load the predictions
-val_preds = pd.read_csv('/home/ml4science0/novozymes/predictions/esm2_t6_8M_UR50D_val_preds.csv')
+val_preds = pd.read_csv('../predictions/esm2_t6_8M_UR50D_val_preds.csv')
 
 # load the model from pth_models folder and get its architecture withouth the class ProteinModel
+<<<<<<< HEAD
 
 model = torch.load('/home/ml4science0/novozymes/pth_models/esm2_t6_8M_UR50D_model.pth')
+=======
+model = torch.load('../pth_models/esm2_t6_8M_UR50D_model.pth')
+>>>>>>> 1b3ce70b5c2d6ac6cd724e7fedd37f0aade6ae10
 
 # Get the layers of the model and print them
 print(model)
@@ -34,7 +38,7 @@ metrics = {
 
 # Save metrics to a file
 metrics_df = pd.DataFrame([metrics])
-metrics_df.to_csv('/home/ml4science0/novozymes/metrics and plots/esm2_t6_8M_UR50D_metrics.csv', index=False)
+metrics_df.to_csv('./metrics and plots/esm2_t6_8M_UR50D_metrics.csv', index=False)
 
 # Print the metrics
 print(metrics_df)
@@ -48,5 +52,5 @@ sns.scatterplot(x=true_values, y=pred_values)
 plt.xlabel('True values')
 plt.ylabel('Predicted values')
 plt.title('True vs Predicted values')
-plt.savefig('/home/ml4science0/novozymes/metrics and plots/esm2_t6_8M_UR50D_plot.png')
+plt.savefig('./metrics and plots/esm2_t6_8M_UR50D_plot.png')
 
