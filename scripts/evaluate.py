@@ -33,7 +33,19 @@ metrics = {
 
 # Save metrics to a file
 metrics_df = pd.DataFrame([metrics])
-metrics_df.to_csv('/home/ml4science0/novozymes/results/esm2_t6_8M_UR50D_metrics.csv', index=False)
+metrics_df.to_csv('/home/ml4science0/novozymes/metrics and plots/esm2_t6_8M_UR50D_metrics.csv', index=False)
 
 # Print the metrics
 print(metrics_df)
+
+# plot using seaborn and matplotlib the true values vs the predicted values and save the plot
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+plt.figure(figsize=(10, 10))
+sns.scatterplot(x=true_values, y=pred_values)
+plt.xlabel('True values')
+plt.ylabel('Predicted values')
+plt.title('True vs Predicted values')
+plt.savefig('/home/ml4science0/novozymes/metrics and plots/esm2_t6_8M_UR50D_plot.png')
+
