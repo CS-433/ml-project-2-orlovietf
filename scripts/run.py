@@ -1,4 +1,4 @@
-from baseline_model import ProteinModel
+from esm import ProteinModel
 from datasets import ProteinDataset
 from train import *
 import torch
@@ -49,8 +49,8 @@ def main():
 
     tms, preds = inference(model, val_loader, device)
 
-    torch.save(model, "/home/ml4science0/novozymes/pth_models/esm2_t6_8M_UR50D_model.pth")
-    pd.DataFrame({"tm": tms, "preds": preds}).to_csv("/home/ml4science0/novozymes/predictions/esm2_t6_8M_UR50D_val_preds.csv", index=False)
+    torch.save(model, "./pth_models/esm2_t6_8M_UR50D_model.pth")
+    pd.DataFrame({"tm": tms, "preds": preds}).to_csv("./predictions/esm2_t6_8M_UR50D_val_preds.csv", index=False)
 
 
 
