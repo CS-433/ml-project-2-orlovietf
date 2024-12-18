@@ -116,6 +116,8 @@ The table below shows the results obtained for Model 1 (ESM) and the best Model 
 | **ESM**      | 0.77 ± 0.01    | 0.56 ± 0.01    | 7.7 ± 0.1      | 5.6 ± 0.1     |
 | Carbonara    | 0.49 ± 0.01    | 0.37 ± 0.01    | 11.6 ± 0.2     | 8.7 ± 0.3     |
 
+The estimated training time for 5 epochs of the ESM model is approximately 30 minutes on a workstation with a dedicated GPU. 
+In comparison, the estimated training times for 100 epochs of the Carbonara MLP and Carbonara RNN models are roughly 2 minutes and 30 minutes, respectively.
 
 ## Credits
 
