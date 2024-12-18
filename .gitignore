@@ -7,5 +7,4 @@
 # File types
 **/*.h5
 **/*.job
-**/*.csv
 **/*.pdb

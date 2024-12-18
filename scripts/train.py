@@ -7,6 +7,7 @@ from scipy.stats import spearmanr
 
 def train(model, train_loader, val_loader, criterion, optimizer, num_epochs, device):
     model.to(device)
+    print("Starting training...")
     
     for epoch in range(num_epochs):
         model.train()

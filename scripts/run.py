@@ -15,8 +15,8 @@ def main():
     
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    df = pd.read_csv("/home/ml4science0/novozymes/train_updated.csv")
-    test_df = pd.read_csv("/home/ml4science0/novozymes/test.csv")
+    df = pd.read_csv("./train_updated.csv")
+    test_df = pd.read_csv("./test.csv")
 
     sequences = df["protein_sequence"].tolist()
     tm = df["tm"].values
