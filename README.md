@@ -104,7 +104,7 @@ Afterward simply run the `models/carbonara_simpl.ipynb` or `models/carbonara_rnn
     ├── datasets.py: definition ProteinDataset used by the ESM model
     ├── esm.py: defitinion of the esm model we used
     ├── evaluate.py: code to evaluete the performance of the esm model
-    ├── run.py: python script to run and evaluate the esm model
+    ├── run.py: python script to run and evaluate the ESM model
     ├── train.py: code for training the esm model
 ├── CS_433_Class_Project_2.pdf: a report of the project.
 ├── README.md
