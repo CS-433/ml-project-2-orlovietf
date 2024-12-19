@@ -9,3 +9,5 @@ seaborn
 statistics
 collections
 operator
+h5py
+json
