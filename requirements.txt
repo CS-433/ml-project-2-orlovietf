@@ -1,13 +1,7 @@
 pandas
 numpy<2.0
-matplotlib
 transformers
 torch
 scipy
 scikit-learn
-seaborn
-statistics
-collections
-operator
 h5py
-json
