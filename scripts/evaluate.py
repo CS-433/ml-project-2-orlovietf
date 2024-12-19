@@ -8,12 +8,7 @@ import numpy as np
 val_preds = pd.read_csv('../predictions/esm2_t6_8M_UR50D_val_preds.csv')
 
 # load the model from pth_models folder and get its architecture withouth the class ProteinModel
-<<<<<<< HEAD
-
-model = torch.load('/home/ml4science0/novozymes/pth_models/esm2_t6_8M_UR50D_model.pth')
-=======
 model = torch.load('../pth_models/esm2_t6_8M_UR50D_model.pth')
->>>>>>> 1b3ce70b5c2d6ac6cd724e7fedd37f0aade6ae10
 
 # Get the layers of the model and print them
 print(model)
