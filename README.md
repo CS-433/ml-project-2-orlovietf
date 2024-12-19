@@ -4,11 +4,13 @@
 
 <p align="center">
   <a href="#about">About</a> •
-  <a href="#tutorials">Tutorials</a> •
-  <a href="#examples">Examples</a> •
+  <a href="#data">Data</a> •
   <a href="#installation">Installation</a> •
+  <a href="#method">Method</a> •
   <a href="#how-to-use">How To Use</a> •
   <a href="#credits">Credits</a> •
+  <a href="#code-structure">Code Structure</a> •
+  <a href="#results">Results</a> •
   <a href="#license">License</a>
 </p>
 
