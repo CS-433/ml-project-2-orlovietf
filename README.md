@@ -106,7 +106,7 @@ Afterward simply run the `models/carbonara_simpl.ipynb` or `models/carbonara_rnn
     ├── evaluate.py: code to evaluete the performance of the esm model
     ├── run.py: python script to run and evaluate the esm model
     ├── train.py: code for training the esm model
-├── CS_433_Project_1.pdf: a report of the project.
+├── CS_433_Class_Project_2.pdf: a report of the project.
 ├── README.md
 ├── requirements.txt
 ├── test.csv: csv file containg test data
