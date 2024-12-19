@@ -1,5 +1,3 @@
-# ml-project-2-orlovietf
-
 # Protein Melting Temperature Prediction
 
 <p align="center">
@@ -19,6 +17,15 @@
    <img src=https://img.shields.io/badge/license-MIT-blue.svg>
 </a>
 </p>
+
+## Team
+The project is accomplished by team **OrloviETF** with members:
+
+Igor Pavlovic - @Igzi
+
+Jelisaveta Aleksic - @AleksicJelisaveta
+
+Natasa Jovanovic - @natasa-jovanovic
 
 ## About
 
