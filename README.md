@@ -107,8 +107,10 @@ Afterward simply run the `models/carbonara_simpl.ipynb` or `models/carbonara_rnn
 ├── CS_433_Project_1.pdf: a report of the project.
 ├── README.md
 ├── requirements.txt
-├── test.cvs: csv file containg test data
+├── test.csv: csv file containg test data
 ├── train.csv: csv file containing training data
+├── train_wildtype_groups.csv: csv file containing grouped trained data
+├── train_no_wildtype.csv: csv file containing training data which are not grouped
 ```
 
 ## Results
